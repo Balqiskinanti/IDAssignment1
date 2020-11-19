@@ -1,0 +1,29 @@
+/* setting background colour */
+html {
+    background-color: rgb(242, 205, 195);
+  }
+  
+/* remove margin and padding of html */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* setting style for header */
+header {
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; 
+  justify-content: space-between;
+  flex-direction: row;
+  /* stay when scrolled */
+  position: fixed; 
+}
+
+/* setting navigation menu */
+header >nav.menu{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
