@@ -27,7 +27,8 @@ header >nav.menu{
     flex-direction: column;
     text-align: center;
 }
-  
+
+/* links for header */
 header >nav.menu >a{
     z-index: 2;
     font-family: "Montserrat", sans-serif;
@@ -37,4 +38,47 @@ header >nav.menu >a{
     color: #dd545b;
     text-decoration: none;
     flex-direction: column;
+}
+
+/* title for page */
+.title {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* style for h1 title */
+.title >h1{
+    z-index: 1;
+    position:fixed;
+    font-size: 150px;
+    letter-spacing: 10px;
+    font-family: "Frank Ruhl Libre", serif;
+    font-family: "Playfair Display", serif;
+    color: #dd545b;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100;
+    padding: 100px;
+}
+
+/* adjust width and paddings for image */
+.title .image >img{
+    width:600px;
+    transform: translate(-10px,-300px);
+    padding-top: 300px;
+    opacity: 80%;
+}
+
+/* style for main information  */
+main{
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(227,163,156);
+    text-align: center;
+    padding-bottom: 40px;
+    padding-left:20px;
+    padding-right: 20px;
+    line-height: 1.5;
 }
