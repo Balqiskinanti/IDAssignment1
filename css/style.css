@@ -27,3 +27,52 @@ header >nav.menu{
   flex-direction: column;
   text-align: center;
 }
+
+/* seting style for the text inside the navigation menu */
+header >nav.menu >a{
+  z-index: 2;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #dd545b;
+  text-decoration: none;
+  flex-direction: column;
+}
+
+.title {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* setting style for text of the title */
+.title >h1 {
+  font-size: 90px;
+  letter-spacing: 5px;
+  font-family: "Frank Ruhl Libre", serif;
+  font-family: "Playfair Display", serif;
+  color: #dd545b;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 100;
+  padding-bottom: 20px;
+}
+
+
+.title >h2 {
+  font-size: 20px;
+  letter-spacing: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #dd545b;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
