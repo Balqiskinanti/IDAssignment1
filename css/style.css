@@ -21,6 +21,12 @@ header {
   position: fixed; 
 }
 
+/* set logo width */
+header .logo {
+  width: 70px;
+  padding: 30px;
+}
+
 /* setting navigation menu */
 header >nav.menu{
   display: flex;
@@ -187,11 +193,6 @@ footer >nav >a{
 
 @media only screen and (min-width:768px ) {
   /* For pc: */
-  header .logo {
-  width: 5%;
-  padding: 30px;
-  }
-
   header >nav.menu{
     margin:auto 40px;
   }
@@ -213,11 +214,6 @@ footer >nav >a{
 
 @media only screen and (max-width: 767px) {
   /* For mobile phones: */
-  header .logo {
-    width: 15%;
-    padding: 10px;
-  }
-
   header >nav.menu{
       margin:auto 10px;
   }
