@@ -1,0 +1,69 @@
+/* setting background colour */
+html {
+  background-color: #FFEAE2;
+}
+
+/* remove margin and padding of html */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* setting style for header */
+header {
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; 
+  justify-content: space-between;
+  flex-direction: row;
+  /* stay when scrolled */
+  position: fixed; 
+}
+
+/* setting navigation menu */
+header >nav.menu{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* links for header */
+header >nav.menu >a{
+  z-index: 2;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #dd545b;
+  text-decoration: none;
+  flex-direction: column;
+}
+
+/* setting flexbox for title parent element */
+.title {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+/* style for h1 title */
+.title >h1 {
+  z-index: 1;
+  font-size: 200px;
+  letter-spacing: 5px;
+  font-family: "Frank Ruhl Libre", serif;
+  font-family: "Playfair Display", serif;
+  color: #dd545b;
+  opacity: 30%;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+  padding:100px; 
+}
