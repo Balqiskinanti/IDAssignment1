@@ -124,6 +124,48 @@ header >nav.menu >a{
   text-decoration: underline;
 }
 
+/* contact-me portion parent element */
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* title for contact */
+.contact >h3{
+  font-family: "Open Sans", sans-serif;
+  color: rgb(227,163,156);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 8px;
+  padding: 100px;
+}
+
+/* links for my contacts */
+.contact >address{
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* links for my contacts */
+.contact >address >a{
+  font-family: "Open Sans", sans-serif;
+  color: rgb(227,163,156);
+  font-style: normal;
+}
+
+/* style for email */
+.contact >address >a.mail{
+  line-height: 50px;
+}
+
+
 
 
 
