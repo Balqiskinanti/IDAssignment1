@@ -144,10 +144,15 @@ header >nav.menu >a{
   font-family: "Open Sans", sans-serif;
   color: rgb(227,163,156);
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 100;
   letter-spacing: 8px;
   padding: 100px;
+}
+
+.contact >img{
+  width: 200px;
+  border-radius: 50%;
 }
 
 /* links for my contacts */
