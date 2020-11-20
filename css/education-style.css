@@ -152,8 +152,8 @@ footer >nav >a{
 
 @media only screen and (min-width:768px ) {
     /* For pc: */
-    header .logo {
-    width: 5%;
+    header >a >img.logo {
+    width: 100px;
     padding: 30px;
     }
 
@@ -164,8 +164,8 @@ footer >nav >a{
 
 @media only screen and (max-width: 767px) {
     /* For mobile phones: */
-    header .logo {
-      width: 15%;
+    header >a >img.logo {
+      width: 50px;
       padding: 10px;
     }
 
