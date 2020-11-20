@@ -43,7 +43,7 @@ https://github.com/Balqiskinanti/ID_S10204973G_BalqisKinantiHaldiHeryputri_Assg1
 
 ### Testing
 :pushpin: How my project looks :
-![web image desktop](landing-page.png)
+![web image desktop](https://github.com/Balqiskinanti/ID_S10204973G_BalqisKinantiHaldiHeryputri_Assg1_website/blob/main/pictures/landing-page.PNG)
 
 Some bugs and problems that I encounter are the paddings in the mobile view. The contents in between the header and
 footer gets pushed to the left when screen size gets smaller. 
@@ -54,7 +54,7 @@ footer gets pushed to the left when screen size gets smaller.
 2. The photos from the projects page were obtained from 
    * [Headery](https://headery.com/pages/our-story/) 
    * [pinterest](https://www.pinterest.com/)
-   * [Humbert&Poyet][http://humbertpoyet.ouiwill.com/)
+   * [Humbert & Poyet](http://humbertpoyet.ouiwill.com/)
 #### Acknowledgements :sun_with_face:
 I received inspiration from this [website](https://www.sophie-dkf.com/)
 
