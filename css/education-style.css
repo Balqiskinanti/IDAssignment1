@@ -1,0 +1,64 @@
+/* setting background colour */
+html {
+    background-color:rgb(114, 46, 59);
+}
+
+/* remove margin and padding of html */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* setting style for header */
+header {
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; 
+    justify-content: space-between;
+    flex-direction: row;
+    /* stay when scrolled */
+    position: fixed; 
+}
+
+/* setting navigation menu */
+header >nav.menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* seting style for the text inside the navigation menu */
+header >nav.menu >a{
+    z-index: 3;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+/* setting style for title -parent element */
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+}
+
+/* setting style for text of the h1 */
+.title >h1 {
+    font-size: 200px;
+    opacity: 50%;
+    letter-spacing: 5px;
+    font-family: "Frank Ruhl Libre", serif;
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
