@@ -11,6 +11,7 @@ html {
 
 /* setting style for header */
 header {
+  background-color: rgb(242, 205, 195);
   z-index: 2;
   display: flex;
   flex-wrap: wrap;
@@ -21,54 +22,52 @@ header {
   position: fixed; 
 }
 
-/* set logo width */
-header .logo {
-  width: 70px;
-  padding: 30px;
-}
+/* logo width and padding depends on screen size*/
 
 /* setting navigation menu */
 header >nav.menu{
   display: flex;
   flex-direction: column;
+  /* margin for menu depends on screen size*/
   text-align: center;
 }
 
 /* seting style for the text inside the navigation menu */
 header >nav.menu >a{
+  /* bring nav to front */
   z-index: 2;
   font-family: "Montserrat", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   line-height: 25px;
   color: #dd545b;
+  /* remove underline */
   text-decoration: none;
   flex-direction: column;
 }
 
-/* setting style for title -parent element */
+header >nav.menu >a:hover{
+  opacity: 50%;
+}
+
+/* setting style for title */
 .title {
+  /* put padding so it doesnt start at the top with header */
   padding-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-  flex-direction: column;
   text-align: center;
 }
 
 /* setting style for text of the h1 */
 .title >h1 {
-  font-size: 90px;
+  /* font size differs according to screen size */
   letter-spacing: 5px;
   font-family: "Frank Ruhl Libre", serif;
   font-family: "Playfair Display", serif;
   color: #dd545b;
   text-transform: capitalize;
-  text-align: center;
+  /* reset thickness of title since it's h1 */
   font-weight: 100;
+  /* space between headers */
   padding-bottom: 20px;
 }
 
@@ -83,36 +82,36 @@ header >nav.menu >a{
   font-weight: 100;
 }
 
-/* about me section -parent element */
+/* about me section */
 .about-me {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
 /* picture */
-.about-me .dev-routine {
+.about-me .dev-routine{
+  /* space between h2 and image */
   padding-top: 3rem;
+  /* fix image size */
   width: 65%;
 }
 
 /* description of myself */
 .about-me >p.description{
   text-align: center;
-  /* padding: 80px 130px; */
+  /* padding differs based on screen size */
   font-family: "Playfair Display", serif;
   color: rgb(227,163,156);
+  /* font-size differs based on screen size */
   /* font-size: 50px; */
-  justify-content: center;
 }
 
 /* skills title*/
 .about-me >h3{
   font-family: "Playfair Display", serif;
   color: #dd545b;
-  /* font-size: 50px; */
+  /* font-size differs based on screen size */
   font-weight: 100;
 }
 
@@ -121,21 +120,19 @@ header >nav.menu >a{
   font-family: "Open Sans", sans-serif;
   color: #dd545b;
   text-transform: uppercase;
-  /* font-size: 30px; */
+  /* font-size differs based on screen size */
   text-align: center;
   padding: 30px;
   letter-spacing: 5px;
-  /* line-height: 100px; */
+  line-height: 80px;
+  /* remove numbers */
   list-style-type: none;
-  text-decoration: underline;
 }
 
 /* contact-me portion parent element */
 .contact{
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -144,12 +141,13 @@ header >nav.menu >a{
   font-family: "Open Sans", sans-serif;
   color: rgb(227,163,156);
   text-transform: uppercase;
-  font-size: 30px;
+  /* font-size differs based on screen size */
   font-weight: 100;
-  letter-spacing: 8px;
-  padding: 100px;
+  letter-spacing: 3px;
+  /* padding differs based on screen size */
 }
 
+/* fix image size and make it circle */
 .contact >img{
   width: 200px;
   border-radius: 50%;
@@ -157,29 +155,32 @@ header >nav.menu >a{
 
 /* links for my contacts */
 .contact >address{
-  letter-spacing: 8px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding:50px 0;
+  /* spacings per <a> tag */
+  line-height: 30px;
 }
 
 /* links for my contacts */
 .contact >address >a{
+  /* font-size differs based on screen size */
   font-family: "Open Sans", sans-serif;
   color: rgb(227,163,156);
   font-style: normal;
+  text-decoration: none;
 }
 
-/* style for email */
-.contact >address >a.mail{
-  line-height: 50px;
+.contact >address >a:hover{
+  text-decoration: underline;
 }
 
-/* footer parent element */
+/* footer */
 footer{
   display: flex;
   flex-wrap: wrap;
+  /* bottom and left padding */
   padding: 0 0 30px 30px;
 }
 
@@ -187,58 +188,208 @@ footer{
 footer >nav >a{
   font-family: "Open Sans", sans-serif;
   color: rgb(224, 142, 133);
-  font-style: normal;
   text-transform: uppercase;
   font-size: 10px;
   font-weight: bold;
-  padding-right: 50px;
+  padding-right: 30px;
   text-decoration: none;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
-@media only screen and (min-width:768px ) {
-  /* For pc: */
-  header >nav.menu{
-    margin:auto 40px;
+footer >nav >a:hover{
+  color: #dd545b;
+}
+
+/* media query starts here */
+/* Extra small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 200px) {
+  header .logo {
+    width: 40px;
+    padding: 15px;
   }
 
+  header >nav.menu{
+    margin:auto 10px;
+  }
+
+  header >nav.menu >a {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .title >h1 {
+    font-size:53px;
+  }
+  .about-me >p.description{
+    padding:150px 80px ;
+    font-size: 30px;
+  }
+  .about-me >h3{
+    font-size:50px ;
+  }
+  .about-me >ol.skills{
+    font-size: 13px;
+  }
+  .contact >h3{
+    font-size: 25px;
+    padding: 80px;
+  }
+  .contact >address >a{
+    font-size: 12px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  header .logo {
+    width: 50px;
+    padding: 15px;
+  }
+
+  header >nav.menu{
+    margin:auto 15px;
+  }
+
+  header >nav.menu >a {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .title >h1 {
+    font-size:70px;
+  }
+  .about-me >p.description{
+    padding:150px 45px ;
+    font-size: 30px;
+  }
+  .about-me >h3{
+    font-size:50px ;
+  }
+  .about-me >ol.skills{
+    font-size: 20px;
+  }
+  .contact >h3{
+    font-size: 25px;
+    padding: 80px;
+  }
+  .contact >address >a{
+    font-size: 15px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header .logo {
+    width: 60px;
+    padding: 30px;
+  }
+
+  header >nav.menu{
+    margin:auto 20px;
+  }
+
+  header >nav.menu >a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .title >h1 {
+    font-size:90px;
+  }
+  .about-me >p.description{
+    padding:170px 100px ;
+    font-size: 35px;
+  }
+  .about-me >h3{
+    font-size: 60px;
+  }
+  .about-me >ol.skills{
+    font-size:25px ;
+  }
+  .contact >h3{
+    font-size: 30px;
+    padding: 80px;
+  }
+  .contact >address >a{
+    font-size: 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header .logo {
+    width: 60px;
+    padding: 30px;
+  }
+
+  header >nav.menu{
+    margin:auto 20px;
+  }
+
+  header >nav.menu >a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .title >h1 {
+    font-size:100px;
+  }
+  .about-me >p.description{
+    padding: 180px 120px;
+    font-size: 40px;
+  }
+  .about-me >h3{
+    font-size: 75px;
+  }
+  .about-me >ol.skills{
+    font-size: 30px;
+  }
+  .contact >h3{
+    font-size:30px ;
+    padding: 100px;
+  }
+  .contact >address >a{
+    font-size: 25px;
+  }	
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header .logo {
+    width: 70px;
+    padding: 30px;
+  }
+
+  header >nav.menu{
+    margin:auto 20px;
+  }
+
+  header >nav.menu >a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .title >h1 {
+    font-size:120px;
+  }
+  .about-me >p.description{
+    padding: 200px 150px;
+    font-size:50px ;
+  }
   .about-me >h3{
     font-size: 80px;
   }
-
-  .about-me >p.description{
-    font-size: 50px;
-    padding: 200px 130px;
-  }
-
   .about-me >ol.skills{
     font-size: 30px;
-    line-height: 100px;
   }
-}
-
-@media only screen and (max-width: 767px) {
-  /* For mobile phones: */
-  header >nav.menu{
-      margin:auto 10px;
-  }
-
-  .about-me >h3{
-    font-size: 40px;
-  }
-
-  .about-me >p.description{
+  .contact >h3{
     font-size: 30px;
-    padding: 80px 80px;
+    padding: 50px;
   }
-
-  .about-me >ol.skills{
-    font-size: 20px;
-    line-height: 70px;
-  }
+  .contact >address >a{
+    font-size: 25px;
+  }		
 }
-
-
 
 
 
