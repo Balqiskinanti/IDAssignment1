@@ -11,6 +11,7 @@ html {
 
 /* setting style for header */
 header {
+  background-color: #FFEAE2;
   z-index: 2;
   display: flex;
   flex-wrap: wrap;
@@ -21,16 +22,13 @@ header {
   position: fixed; 
 }
 
-/* set logo width */
-header >a >img.logo {
-  width: 70px;
-  padding: 30px;
-}
+/* logo width and padding depends on screen size*/
 
 /* setting navigation menu */
 header >nav.menu{
   display: flex;
   flex-direction: column;
+  /* margin for menu depends on screen size*/
   text-align: center;
 }
 
@@ -39,62 +37,52 @@ header >nav.menu >a{
   z-index: 2;
   font-family: "Montserrat", sans-serif;
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  /* font size and line height depends on screen size */
   color: #dd545b;
+  /* remove underline */
   text-decoration: none;
   flex-direction: column;
 }
 
-/* setting flexbox for title parent element */
-.title {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-wrap: wrap;
-  position: fixed;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+header >nav.menu >a:hover{
+  opacity: 50%;
 }
 
 /* style for h1 title */
-.title >h1 {
+h1 {
   z-index: 1;
-  font-size: 200px;
+  padding-top:150px;
+  /* font size differs according to screen size */
   letter-spacing: 5px;
   font-family: "Frank Ruhl Libre", serif;
   font-family: "Playfair Display", serif;
   color: #dd545b;
-  opacity: 30%;
+  opacity: 10%;
   text-transform: uppercase;
+  width: 100%;
   text-align: center;
   font-weight: 100;
-  padding:100px; 
+  position: fixed;
 }
 
 /* creating flexbox for projects */
 .projects{
+  z-index: 1;
   display: flex;
-  flex-wrap: wrap;
   position: relative;
   flex-direction: column;
   text-align: center;
+  /* doesnt start from the top and give space in between pics */
   padding-top: 400px;
 }
 
-/* adjust style for each picture */
-.projects .photo-container >img{
-  width:800px;
-  height:auto;
-  margin: 100px auto;
-}
+/* picture size and margin depends on screen size */
 
 /* footer flexbox and padding */
 footer{
   display: flex;
   flex-wrap: wrap;
+  /* bottom and left padding */
   padding: 0 0 30px 30px;
   position: absolute
 }
@@ -103,25 +91,145 @@ footer{
 footer >nav >a{
   font-family: "Open Sans", sans-serif;
   color: rgb(224, 142, 133);
-  font-style: normal;
   text-transform: uppercase;
   font-size: 10px;
   font-weight: bold;
-  padding-right: 50px;
+  padding-right: 30px;
   text-decoration: none;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
-@media only screen and (min-width:768px ) {
-  /* For pc: */
+footer >nav >a:hover{
+  color: #dd545b;
+}
+
+/* media query starts here */
+/* Extra small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 200px) {
+  header .logo {
+      width: 40px;
+      padding: 15px;
+  }
+
   header >nav.menu{
-    margin:auto 40px;
+      margin:auto 10px;
+  }
+
+  header >nav.menu >a {
+      font-size: 10px;
+      line-height: 15px;
+  }
+
+  h1{
+    font-size:90px;
+  }
+
+  .projects .photo-container >img{
+    width: 400px;
+    padding: 50px 10px;
   }
 }
 
-@media only screen and (max-width: 767px) {
-  /* For mobile phones: */
-    header >nav.menu{
-      margin:auto 10px;
-    }
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  header .logo {
+    width: 50px;
+    padding: 15px;
+  }
+
+  header >nav.menu{
+      margin:auto 15px;
+  }
+
+  header >nav.menu >a {
+      font-size: 15px;
+      line-height: 20px;
+  }
+
+  h1{
+    font-size:110px;
+  }
+
+  .projects .photo-container >img{
+    width: 500px;
+    padding: 80px 10px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header .logo {
+    width: 60px;
+    padding: 30px;
+  }
+
+  header >nav.menu{
+      margin:auto 20px;
+  }
+
+  header >nav.menu >a {
+      font-size: 18px;
+      line-height: 30px;
+  }
+
+  h1{
+    font-size:140px;
+  }
+
+  .projects .photo-container >img{
+    width: 600px;
+    padding: 80px 10px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header .logo {
+    width: 60px;
+    padding: 30px;
+  }
+
+  header >nav.menu{
+      margin:auto 20px;
+  }
+
+  header >nav.menu >a {
+      font-size: 18px;
+      line-height: 30px;
+  }
+
+  h1{
+    font-size:200px;
+  }
+
+  .projects .photo-container >img{
+    width: 800px;
+    padding: 100px 10px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header .logo {
+    width: 70px;
+    padding: 30px;
+  }
+
+  header >nav.menu{
+      margin:auto 20px;
+  }
+
+  header >nav.menu >a {
+      font-size: 18px;
+      line-height: 30px;
+  }
+
+  h1{
+    font-size:200px;
+  }
+
+  .projects .photo-container >img{
+    width: 800px;
+    padding: 100px 10px;
+  }
 }
