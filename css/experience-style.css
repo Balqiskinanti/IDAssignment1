@@ -99,6 +99,10 @@ footer >nav >a{
     letter-spacing: 3px;
 }
 
+footer >nav >a:hover{
+    color: #dd545b;
+}
+
 /* media query starts here */
 /* Extra small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 200px) {
@@ -117,19 +121,19 @@ footer >nav >a{
     }
 
     .title >h1{
-        font-size: 35px;
+        font-size: 30px;
         letter-spacing: 6px;
         padding-top:100px;
     }
 
     .title .image{
-        height:400px;
+        height:450px;
     }
 
     .title .image >img{
         height: inherit ;
         width: auto;
-        transform: translate(-10px,-300px);
+        transform: translate(-0px,-300px);
         padding-top:300px ;
     }
 
