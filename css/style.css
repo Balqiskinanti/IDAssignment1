@@ -52,12 +52,13 @@ header >nav.menu >a:hover{
 /* setting style for title */
 .title {
   /* put padding so it doesnt start at the top with header */
-  padding-top: 100px;
+  padding-top: 150px;
   text-align: center;
 }
 
 /* setting style for text of the h1 */
 .title >h1 {
+  margin: 0px;
   /* font size differs according to screen size */
   letter-spacing: 5px;
   font-family: "Frank Ruhl Libre", serif;
@@ -375,6 +376,7 @@ footer >nav >a:hover{
   .title >h1 {
     font-size:120px;
   }
+
   .about-me >p.description{
     padding: 200px 150px;
     font-size:50px ;

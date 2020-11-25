@@ -50,14 +50,15 @@ header >nav.menu >a:hover{
 
 /* setting style for text of the h1 */
 h1 {
+    margin: 0px;
     /* padding differs according to screen size */
     /* font size differs according to screen size */
-    opacity: 20%;
+    opacity: 10%;
     letter-spacing: 5px;
     font-family: "Frank Ruhl Libre", serif;
     font-family: "Playfair Display", serif;
     color: rgb(221, 84, 91);
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-align: center;
     /* reset thickness of title since it's h1 */
     font-weight: 100;
@@ -167,8 +168,8 @@ footer >nav >a:hover{
     }
 
     h1 {
-        font-size:50px;
-        padding: 100px 0px;
+        font-size:39px;
+        padding: 150px 10px;
     }
 
     main .education{
@@ -206,8 +207,8 @@ footer >nav >a:hover{
     }
 
     h1 {
-        font-size:70px;
-        padding: 100px 0px;
+        font-size:55px;
+        padding: 200px 10px;
     }
 
     main .education{
@@ -246,8 +247,8 @@ footer >nav >a:hover{
     }
 
     h1 {
-        font-size:100px;
-        padding: 100px;
+        font-size:90px;
+        padding: 200px 10px;
     }
 
     main .education{
@@ -286,8 +287,8 @@ footer >nav >a:hover{
     }
 
     h1 {
-        font-size:130px;
-        padding: 80px;
+        font-size:120px;
+        padding: 180px 10px;
     }	
     
     main .education{
@@ -325,8 +326,8 @@ footer >nav >a:hover{
     }
 
     h1 {
-        font-size:150px;
-        padding: 100px;
+        font-size:160px;
+        padding: 150px 10px;
     }	
     
     main .education{
@@ -364,8 +365,8 @@ footer >nav >a:hover{
     }
 
     h1 {
-        font-size:200px;
-        padding: 150px;
+        font-size:180px;
+        padding: 150px 10px;
     }	
     
     main .education{
@@ -374,7 +375,7 @@ footer >nav >a:hover{
     }
 
     main .education >h2{
-        font-size: 70px;
+        font-size: 60px;
     }
 
     main .education >h3{

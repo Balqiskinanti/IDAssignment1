@@ -50,6 +50,7 @@ header >nav.menu >a:hover{
 
 /* style for h1 title */
 h1 {
+  margin: 0px;
   z-index: 1;
   padding-top:150px;
   /* font size differs according to screen size */
