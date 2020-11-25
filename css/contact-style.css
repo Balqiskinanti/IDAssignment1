@@ -27,7 +27,7 @@ header {
 /* setting navigation menu */
 header >nav.menu{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* margin for menu depends on screen size*/
     text-align: center;
 }
@@ -41,10 +41,12 @@ header >nav.menu >a{
     color: #dd545b;
     text-decoration: none;
     flex-direction: column;
+    padding-right: 20px;
 }
 
 /* style for the title  */
 h1{
+    width: 100%;
     text-align: center;
     font-family: "Open Sans", sans-serif;
     color:#ad272ea8;
@@ -52,7 +54,7 @@ h1{
     /* font size, padding and line height depends on screen size */
     font-weight: 100;
     letter-spacing: 8px;
-    position: relative;
+    position: absolute;
     z-index: 1;
 }
 
@@ -67,9 +69,9 @@ h1{
 /* give paddings and style to address */
 address{
     position: relative;
-    letter-spacing: 8px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: center;
+    z-index: 1;
     /* position and padding depends on screen size */
 }
 
@@ -129,10 +131,77 @@ footer >nav >a:hover{
         font-size: 10px;
         line-height: 15px;
     }
+    
+    h1{
+        font-size: 15px;
+        padding-top:150px;
+    }
+
+    .image-container >img{
+        height: auto;
+        width: 260px;
+        transform: translate(0px, 130px);
+    }
+
+    address {
+        letter-spacing: 5px;
+        transform: translate(0px,-280px);
+    }
+
+    address >a {
+        font-size:30px;
+        line-height:70px;
+    }
+
+    address >a.tel{
+        font-size: 20px;
+    }
+}
+
+/* Extra small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 377px) {
+    header .logo {
+        width: 40px;
+        padding: 15px;
+    }
+
+    header >nav.menu{
+        margin:auto 10px;
+    }
+
+    header >nav.menu >a {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    
+    h1{
+        font-size: 20px;
+        padding-top:180px;
+    }
+
+    .image-container >img{
+        height: auto;
+        width: 300px;
+        transform: translate(0px, 150px);
+    }
+
+    address {
+        letter-spacing: 5px;
+        transform: translate(0px,-280px);
+    }
+
+    address >a {
+        font-size:38px;
+        line-height:70px;
+    }
+
+    address >a.tel{
+        font-size: 20px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 458px) {
     header .logo {
         width: 50px;
         padding: 15px;
@@ -145,6 +214,31 @@ footer >nav >a:hover{
       header >nav.menu >a {
         font-size: 15px;
         line-height: 20px;
+    }
+    
+    h1{
+        font-size: 20px;
+        padding-top:200px;
+    }
+
+    .image-container >img{
+        height: auto;
+        width: 380px;
+        transform: translate(0px, 150px);
+    }
+
+    address {
+        letter-spacing: 7px;
+        transform: translate(0px,-400px);
+    }
+
+    address >a {
+        font-size:42px;
+        line-height:80px;
+    }
+
+    address >a.tel{
+        font-size: 20px;
     }
 }
 
@@ -163,6 +257,32 @@ footer >nav >a:hover{
         font-size: 18px;
         line-height: 30px;
     }
+    
+    h1{
+        font-size: 20px;
+        padding-top:200px;
+    }
+
+    .image-container >img{
+        height: auto;
+        width: 400px;
+        transform: translate(0px, 150px);
+    }
+
+    address {
+        letter-spacing: 7px;
+        transform: translate(0px,-360px);
+    }
+
+    address >a {
+        font-size:40px;
+        line-height:100px;
+    }
+
+    address >a.tel{
+        font-size: 30px;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -179,6 +299,31 @@ footer >nav >a:hover{
       header >nav.menu >a {
         font-size: 18px;
         line-height: 30px;
+    }
+
+    h1{
+        font-size: 20px;
+        padding-top:200px;
+    }
+
+    .image-container >img{
+        height: auto;
+        width: 400px;
+        transform: translate(0px, 150px);
+    }
+
+    address {
+        letter-spacing: 8px;
+        transform: translate(0px,-360px);
+    }
+
+    address >a {
+        font-size:50px;
+        line-height:100px;
+    }
+
+    address >a.tel{
+        font-size: 30px;
     }
 }
 
@@ -199,22 +344,19 @@ footer >nav >a:hover{
     }
 
     h1{
-        font-size: 40px;
-        padding: 30px;
-        line-height: 100px;
+        font-size: 20px;
+        padding-top:200px;
     }
 
-    .image .image-container{
-        height: 600px;
-    }
-
-    .image .container >img{
-        transform: translate(10px, -150px);
+    .image-container >img{
+        height: auto;
+        width: 400px;
+        transform: translate(0px, 150px);
     }
 
     address {
-        transform: translate(10px,-350px);
-        padding-bottom: 50px;
+        letter-spacing: 8px;
+        transform: translate(0px,-360px);
     }
 
     address >a {
