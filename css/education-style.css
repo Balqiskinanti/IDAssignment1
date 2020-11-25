@@ -206,16 +206,17 @@ footer >nav >a:hover{
 
     h1 {
         font-size:55px;
-        padding: 200px 10px;
+        padding: 150px 10px;
+        padding-bottom: 100px;
     }
 
     main .education{
-        width: 300px;
+        width: 400px;
         height: 530px;
     }
 
     main .education >h2{
-        font-size: 50px;
+        font-size: 40px;
     }
 
     main .education >h3{
@@ -265,7 +266,7 @@ footer >nav >a:hover{
     }
 
     main .education{
-        width: 320px;
+        width: 550px;
         height: 520px;
     }
 
@@ -300,12 +301,12 @@ footer >nav >a:hover{
 
     h1 {
         font-size:120px;
-        padding: 180px 10px;
+        padding: 200px 10px;
     }	
     
     main .education{
-        width: 400px;
-        height: 500px;
+        width: 700px;
+        height: 480px;
     }
 
     main .education >h2{
@@ -342,7 +343,7 @@ footer >nav >a:hover{
     }	
     
     main .education{
-        width: 500px;
+        width: 700px;
         height: 450px;
     }
 
