@@ -15,6 +15,20 @@ I designed this website for potential recruiters that might consider hiring me. 
 in the best light by showcasing my past projects, skills, experinces and achievements. With this, potential
 recruiters will be able to see the style of graphics and web design I do. 
 
+As a recruiter of a web designer, i woud like to see the previous projects that the applicants have done. 
+Apart from that, i would prefer to have a list of achievements and skills to refer to so that i know
+if the applicant is suitable for the job. another useful information include brief description of the applicant. 
+
+The most important thing of all, is to have the contact page easily navigated. This is so that the recruiter 
+can easily contact the applicant. Which is why, i put my contacts on a whole other page and also include it
+on my main page with additional features which is the form so that they can easily reach out to me. The user can 
+also just click on the my email/ phone number and it will bring them to mail/ call feature in their laptop/ phone.
+
+Personally, i prefer websites that have fixed header so that i can easily get to the menu. To get to the main 
+page user can easily click on the logo , which is pretty intuitive.
+
+I also made links hoverable so that the user knows that it will bring them to a new page. 
+
 My XD Wireframe :art: :
 https://github.com/Balqiskinanti/ID_S10204973G_BalqisKinantiHaldiHeryputri_Assg1_website/tree/main/xd
 
