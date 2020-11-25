@@ -42,7 +42,6 @@ header >nav.menu >a{
   /* remove underline */
   text-decoration: none;
   flex-direction: column;
-  padding-right: 20px;
 }
 
 header >nav.menu >a:hover{
@@ -73,8 +72,7 @@ h1 {
   position: relative;
   flex-direction: column;
   text-align: center;
-  /* doesnt start from the top and give space in between pics */
-  padding-top: 400px;
+  /* padding top in mediaqueries */
 }
 
 /* picture size and margin depends on screen size */
@@ -117,16 +115,51 @@ footer >nav >a:hover{
   }
 
   header >nav.menu >a {
-      font-size: 10px;
+      font-size: 9px;
       line-height: 15px;
+      padding-right: 5px;
   }
 
   h1{
-    font-size:90px;
+    font-size:50px;
+  }
+
+  .projects{
+    padding-top: 200px;
   }
 
   .projects .photo-container >img{
-    width: 400px;
+    width: 250px;
+    padding: 50px 10px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  header .logo {
+      width: 40px;
+      padding: 15px;
+  }
+
+  header >nav.menu{
+      margin:auto 10px;
+  }
+
+  header >nav.menu >a {
+      font-size: 9px;
+      line-height: 15px;
+      padding-right: 5px;
+  }
+
+  h1{
+    font-size:60px;
+  }
+
+  .projects{
+    padding-top: 200px;
+  }
+
+  .projects .photo-container >img{
+    width: 350px;
     padding: 50px 10px;
   }
 }
@@ -145,10 +178,16 @@ footer >nav >a:hover{
   header >nav.menu >a {
       font-size: 15px;
       line-height: 20px;
+      padding-right: 5px;
+
   }
 
   h1{
     font-size:110px;
+  }
+
+  .projects{
+    padding-top: 250px;
   }
 
   .projects .photo-container >img{
@@ -169,12 +208,18 @@ footer >nav >a:hover{
   }
 
   header >nav.menu >a {
-      font-size: 18px;
+      font-size: 15px;
       line-height: 30px;
+      padding-right: 10px;
+
   }
 
   h1{
     font-size:140px;
+  }
+
+  .projects{
+    padding-top: 300px;
   }
 
   .projects .photo-container >img{
@@ -197,10 +242,15 @@ footer >nav >a:hover{
   header >nav.menu >a {
       font-size: 18px;
       line-height: 30px;
+      padding-right: 20px;
   }
 
   h1{
     font-size:200px;
+  }
+
+  .projects{
+    padding-top: 400px;
   }
 
   .projects .photo-container >img{
