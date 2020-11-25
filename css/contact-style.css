@@ -41,7 +41,10 @@ header >nav.menu >a{
     color: #dd545b;
     text-decoration: none;
     flex-direction: column;
-    padding-right: 20px;
+}
+
+header >nav.menu >a:hover{
+    opacity: 50%;
 }
 
 /* style for the title  */
@@ -83,12 +86,21 @@ address >a{
     font-style: normal;
     /* font-size and line height depends on screen size */
     text-decoration: none;
+    transition: all 500ms ease;
 }
 
 /* make tel font small*/
 address >a.tel{
     /* font-size depends on screen size */
     text-decoration: overline;
+}
+
+address >a:hover{
+    opacity: 50%;
+}
+
+address >a.tel:hover{
+    font-size: smaller;
 }
 
 
@@ -130,6 +142,7 @@ footer >nav >a:hover{
     header >nav.menu >a {
         font-size: 10px;
         line-height: 15px;
+        padding-right: 5px;
     }
     
     h1{
@@ -149,7 +162,7 @@ footer >nav >a:hover{
     }
 
     address >a {
-        font-size:30px;
+        font-size:28px;
         line-height:70px;
     }
 
@@ -172,26 +185,27 @@ footer >nav >a:hover{
     header >nav.menu >a {
         font-size: 10px;
         line-height: 15px;
+        padding-right: 5px;
     }
     
     h1{
-        font-size: 20px;
-        padding-top:180px;
+        font-size: 15px;
+        padding-top:160px;
     }
 
     .image-container >img{
         height: auto;
-        width: 300px;
+        width: 260px;
         transform: translate(0px, 150px);
     }
 
     address {
         letter-spacing: 5px;
-        transform: translate(0px,-280px);
+        transform: translate(0px,-250px);
     }
 
     address >a {
-        font-size:38px;
+        font-size:35px;
         line-height:70px;
     }
 
@@ -214,6 +228,7 @@ footer >nav >a:hover{
       header >nav.menu >a {
         font-size: 15px;
         line-height: 20px;
+        padding-right: 10px;
     }
     
     h1{
@@ -256,6 +271,7 @@ footer >nav >a:hover{
       header >nav.menu >a {
         font-size: 18px;
         line-height: 30px;
+        padding-right: 20px;
     }
     
     h1{
