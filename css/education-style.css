@@ -1,6 +1,6 @@
 /* setting background colour */
 html {
-    background-color:rgb(114, 46, 59);
+    background-color:#FFEAE2;
 }
 
 /* remove margin and padding of html */
@@ -11,7 +11,7 @@ html {
 
 /* setting style for header */
 header {
-    background-color:rgb(114, 46, 59);
+    background-color:#FFEAE2;
     z-index: 2;
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +27,7 @@ header {
 /* setting navigation menu */
 header >nav.menu{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* margin for menu depends on screen size*/
     text-align: center;
 }
@@ -38,10 +38,11 @@ header >nav.menu >a{
     font-family: "Montserrat", sans-serif;
     font-family: "Open Sans", sans-serif;
      /* font size and line height depends on screen size */
-    color: #fff;
+    color: rgb(221, 84, 91);
     /* remove underline */
     text-decoration: none;
     flex-direction: column;
+    padding-right: 20px;
 }
 
 header >nav.menu >a:hover{
@@ -52,11 +53,11 @@ header >nav.menu >a:hover{
 h1 {
     /* padding differs according to screen size */
     /* font size differs according to screen size */
-    opacity: 50%;
+    opacity: 20%;
     letter-spacing: 5px;
     font-family: "Frank Ruhl Libre", serif;
     font-family: "Playfair Display", serif;
-    color: #fff;
+    color: rgb(221, 84, 91);
     text-transform: capitalize;
     text-align: center;
     /* reset thickness of title since it's h1 */
@@ -72,7 +73,7 @@ main{
 /* parent element for education  */
 main .education{
     /* width, height and padding depends on screen size */
-    background-color: rgb(237,237,232);
+    background-color: #fff;
     align-self: center;
 }
 
@@ -81,7 +82,7 @@ main .education >h2{
     text-align: center;
     font-family: "Frank Ruhl Libre", serif;
     font-family: "Playfair Display", serif;
-    color:rgb(163, 45, 50);
+    color:rgb(221,84,91);
     font-weight: 100;
     padding-bottom: 20px;
 }
@@ -116,6 +117,7 @@ main .education >p{
     color:rgb(221,84,91);
     font-size: 15px;
     letter-spacing: 1px; 
+    padding: 0px 15px;
 }
 
 /* give extra padding in between boxes*/
@@ -134,7 +136,7 @@ footer{
 /* footer links */
 footer >nav >a{
     font-family: "Open Sans", sans-serif;
-    color:#fff;
+    color:rgb(221, 84, 91);
     text-transform: uppercase;
     font-size: 10px;
     font-weight: bold;
@@ -144,7 +146,7 @@ footer >nav >a{
 }
 
 footer >nav >a:hover{
-    color: #dd545b;
+    opacity: 50%;
 }
 
 /* media query starts here */
@@ -171,7 +173,7 @@ footer >nav >a:hover{
 
     main .education{
         width: 250px;
-        height: 530px;
+        height: 670px;
     }
 
     main .education >h2{
@@ -209,7 +211,7 @@ footer >nav >a:hover{
 
     main .education{
         width: 300px;
-        height: 450px;
+        height: 530px;
     }
 
     main .education >h2{
@@ -247,8 +249,8 @@ footer >nav >a:hover{
     }
 
     main .education{
-        width: 400px;
-        height: 450px;
+        width: 320px;
+        height: 520px;
     }
 
     main .education >h2{
@@ -287,7 +289,7 @@ footer >nav >a:hover{
     
     main .education{
         width: 400px;
-        height: 450px;
+        height: 500px;
     }
 
     main .education >h2{
