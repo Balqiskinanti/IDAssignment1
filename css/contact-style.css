@@ -150,8 +150,8 @@ footer >nav >a:hover{
     }
 
     .image-container >img{
-        height: auto;
-        width: 260px;
+        height: 461px;
+        width: auto;
         transform: translate(0px, 180px);
     }
 
@@ -193,15 +193,15 @@ footer >nav >a:hover{
     }
 
     .image-container >img{
-        height: auto;
-        width: 260px;
+        height: 461px;
+        width: auto;
         transform: translate(0px, 150px);
     }
 
     address {
         letter-spacing: 5px;
         transform: translate(0px,-250px);
-        padding-bottom: 0px;
+        padding-bottom: 100px;
     }
 
     address >a {
@@ -236,14 +236,15 @@ footer >nav >a:hover{
     }
 
     .image-container >img{
-        height: auto;
-        width: 380px;
+        height: 675px;
+        width: auto;
         transform: translate(0px, 150px);
     }
 
     address {
         letter-spacing: 7px;
         transform: translate(0px,-400px);
+        padding-bottom: 0px;
     }
 
     address >a {
@@ -293,8 +294,8 @@ footer >nav >a:hover{
     }
 
     .image-container >img{
-        height: auto;
-        width: 400px;
+        height: 710px;
+        width: auto;
         transform: translate(0px, 150px);
     }
 
@@ -335,8 +336,8 @@ footer >nav >a:hover{
     }
 
     .image-container >img{
-        height: auto;
-        width: 400px;
+        height: 710px;
+        width: auto;
         transform: translate(0px, 150px);
     }
 
@@ -376,8 +377,8 @@ footer >nav >a:hover{
     }
 
     .image-container >img{
-        height: auto;
-        width: 400px;
+        height: 710px;
+        width: auto;
         transform: translate(0px, 150px);
     }
 
