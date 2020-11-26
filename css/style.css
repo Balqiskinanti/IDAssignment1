@@ -111,6 +111,7 @@ header >nav.menu >a:hover{
 .about-me >h3{
   font-family: "Playfair Display", serif;
   color: #dd545b;
+  text-transform: uppercase;
   /* font-size differs based on screen size */
   font-weight: 100;
 }
@@ -119,7 +120,7 @@ header >nav.menu >a:hover{
 .about-me >ol.skills{
   font-family: "Open Sans", sans-serif;
   color: #dd545b;
-  text-transform: uppercase;
+  text-transform: capitalize;
   /* font-size differs based on screen size */
   text-align: center;
   padding: 30px;
@@ -130,16 +131,17 @@ header >nav.menu >a:hover{
 }
 
 /* contact-me portion parent element */
-.contact{
+form .contact{
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: antiquewhite;
 }
 
 /* title for contact */
-.contact >h3{
-  font-family: "Open Sans", sans-serif;
-  color: rgb(227,163,156);
+form .contact >h3{
+  font-family: "Playfair Display", serif;
+  color: #fff;
   text-transform: uppercase;
   /* font-size differs based on screen size */
   font-weight: 100;
@@ -147,33 +149,48 @@ header >nav.menu >a:hover{
   /* padding differs based on screen size */
 }
 
-/* fix image size and make it circle */
-.contact >img{
-  width: 200px;
-  border-radius: 50%;
+form .contact .input{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  padding: 30px;
 }
-
-/* links for my contacts */
-.contact >address{
-  letter-spacing: 3px;
-  text-transform: uppercase;
+form .contact .input .input-box{
   text-align: center;
-  padding:50px 0;
-  /* spacings per <a> tag */
-  line-height: 30px;
+  /* padding depends on screen size */
 }
-
-/* links for my contacts */
-.contact >address >a{
-  /* font-size differs based on screen size */
+form .contact .input .input-box >label{
   font-family: "Open Sans", sans-serif;
-  color: rgb(227,163,156);
-  font-style: normal;
-  text-decoration: none;
+  /* font size depends on screen size */
+  color:  rgb(227,163,156);
 }
 
-.contact >address >a:hover{
-  text-decoration: underline;
+form .contact .input .input-box >input{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid  rgb(227,163,156);
+}
+
+form .contact >button{
+  background-color:  rgb(227,163,156); 
+  border: rgb(227,163,156);
+  color: #fff;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+form .contact >button:hover {
+  background-color: #fff;
+  color: rgb(227,163,156);
 }
 
 /* footer */
@@ -230,12 +247,23 @@ footer >nav >a:hover{
   .about-me >ol.skills{
     font-size: 13px;
   }
-  .contact >h3{
-    font-size: 25px;
-    padding: 80px;
+  form .contact{
+    margin:10px 20px;
   }
-  .contact >address >a{
-    font-size: 12px;
+  form .contact >h3{
+    font-size:30px ;
+    padding: 15px;
+  }
+  
+  form .contact .input .input-box{
+    padding: 10px;
+  }
+  form .contact .input .input-box>input{
+    padding-top: 20px;
+  }
+
+  form .contact .input .input-box >label{
+    font-size: 15px;
   }
 }
 
@@ -253,6 +281,25 @@ footer >nav >a:hover{
       font-size: 10px;
       padding-right: 5px;
   }
+  form .contact{
+    margin:10px 20px;
+  }
+
+  form .contact >h3{
+    font-size:40px ;
+    padding: 18px;
+  }
+
+  form .contact .input .input-box{
+    padding: 8px;
+  }
+  form .contact .input .input-box>input{
+    padding-top: 30px;
+  }
+
+  form .contact .input .input-box >label{
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 458px) {
@@ -268,6 +315,25 @@ footer >nav >a:hover{
     header >nav.menu >a {
       font-size: 15px;
       padding-right: 10px;
+  }
+  form .contact{
+    margin:10px 40px;
+  }
+
+  form .contact >h3{
+    font-size:50px ;
+    padding: 20px;
+  }
+
+  form .contact .input .input-box{
+    padding: 10px;
+  }
+  form .contact .input .input-box>input{
+    padding-top: 50px;
+  }
+
+  form .contact .input .input-box >label{
+    font-size: 20px;
   }
 }
 
@@ -300,12 +366,20 @@ footer >nav >a:hover{
   .about-me >ol.skills{
     font-size: 20px;
   }
-  .contact >h3{
-    font-size: 25px;
-    padding: 80px;
+  form .contact{
+    margin:10px 50px;
   }
-  .contact >address >a{
-    font-size: 15px;
+  form .contact >h3{
+    font-size:60px ;
+    padding: 50px;
+  }
+
+  form .contact .input .input-box{
+    padding: 30px;
+  }
+
+  form .contact .input .input-box >label{
+    font-size: 20px;
   }
 }
 
@@ -338,12 +412,18 @@ footer >nav >a:hover{
   .about-me >ol.skills{
     font-size:25px ;
   }
-  .contact >h3{
-    font-size: 30px;
-    padding: 80px;
+
+  form .contact >h3{
+    font-size:60px ;
+    padding: 50px;
   }
-  .contact >address >a{
-    font-size: 20px;
+
+  form .contact .input .input-box{
+    padding: 30px;
+  }
+
+  form .contact .input .input-box >label{
+    font-size: 17px;
   }
 }
 
@@ -375,13 +455,18 @@ footer >nav >a:hover{
   .about-me >ol.skills{
     font-size: 30px;
   }
-  .contact >h3{
-    font-size:30px ;
-    padding: 100px;
+  form .contact >h3{
+    font-size:70px ;
+    padding: 50px;
   }
-  .contact >address >a{
-    font-size: 25px;
-  }	
+
+  form .contact .input .input-box{
+    padding: 50px;
+  }
+
+  form .contact .input .input-box >label{
+    font-size: 20px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -413,13 +498,6 @@ footer >nav >a:hover{
   .about-me >ol.skills{
     font-size: 30px;
   }
-  .contact >h3{
-    font-size: 30px;
-    padding: 50px;
-  }
-  .contact >address >a{
-    font-size: 25px;
-  }		
 }
 
 
