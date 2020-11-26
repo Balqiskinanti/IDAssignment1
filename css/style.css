@@ -16,7 +16,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   width: 100%; 
-  height: auto;
   justify-content: space-between;
   flex-direction: row;
   /* stay when scrolled */
