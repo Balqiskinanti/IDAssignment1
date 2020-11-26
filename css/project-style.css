@@ -72,11 +72,50 @@ h1 {
   display: flex;
   position: relative;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   /* padding top in mediaqueries */
 }
 
 /* picture size and margin depends on screen size */
+.projects .photo-container{
+  display: inherit;
+  position: inherit;
+}
+
+.projects .photo-container .overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.projects .photo-container:hover .overlay {
+  opacity: 100%;
+}
+.projects .photo-container >a{
+  z-index: 2;
+}
+.projects .photo-container >a >img{
+  transition: .5s ease;
+}
+
+.projects .photo-container:hover >a >img {
+  opacity: 90%;
+  transform: scale(0.9);
+}
+
+.projects .photo-container .overlay .text {
+  color: #dd545b;
+  font-size: 18px;
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  text-align: start;
+}
 
 /* footer flexbox and padding */
 footer{
@@ -128,9 +167,13 @@ footer >nav >a:hover{
     padding-top: 200px;
   }
 
-  .projects .photo-container >img{
+  .projects .photo-container >a >img{
     width: 250px;
     padding: 50px 10px;
+  }
+
+  .projects .photo-container .overlay{
+    width: 250px;
   }
 }
 
@@ -157,9 +200,13 @@ footer >nav >a:hover{
     padding-top: 200px;
   }
 
-  .projects .photo-container >img{
+  .projects .photo-container >a >img{
     width: 350px;
     padding: 50px 10px;
+  }
+
+  .projects .photo-container .overlay{
+    width: 350px;
   }
 }
 
@@ -177,6 +224,7 @@ footer >nav >a:hover{
     font-size: 15px;
     padding-right: 10px;
   }
+  
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -203,9 +251,13 @@ footer >nav >a:hover{
     padding-top: 250px;
   }
 
-  .projects .photo-container >img{
+  .projects .photo-container >a >img{
     width: 500px;
     padding: 80px 10px;
+  }
+
+  .projects .photo-container .overlay{
+    width: 500px;
   }
 }
 
@@ -234,9 +286,13 @@ footer >nav >a:hover{
     padding-top: 300px;
   }
 
-  .projects .photo-container >img{
+  .projects .photo-container >a >img{
     width: 600px;
     padding: 80px 10px;
+  }
+
+  .projects .photo-container .overlay{
+    width: 600px;
   }
 }
 
@@ -263,9 +319,13 @@ footer >nav >a:hover{
     padding-top: 400px;
   }
 
-  .projects .photo-container >img{
+  .projects .photo-container >a >img{
     width: 800px;
     padding: 100px 10px;
+  }
+
+  .projects .photo-container .overlay{
+    width: 800px;
   }
 }
 
@@ -288,8 +348,13 @@ footer >nav >a:hover{
     font-size:200px;
   }
 
-  .projects .photo-container >img{
+  .projects .photo-container >a >img{
     width: 800px;
     padding: 100px 10px;
   }
+
+  .projects .photo-container .overlay{
+    width: 800px;
+  }
+
 }
