@@ -146,18 +146,19 @@ footer >nav >a:hover{
     
     h1{
         font-size: 15px;
-        padding-top:150px;
+        padding-top:190px;
     }
 
     .image-container >img{
         height: auto;
         width: 260px;
-        transform: translate(0px, 130px);
+        transform: translate(0px, 180px);
     }
 
     address {
         letter-spacing: 5px;
-        transform: translate(0px,-280px);
+        transform: translate(0px,-230px);
+        padding-bottom: 100px;
     }
 
     address >a {
@@ -200,6 +201,7 @@ footer >nav >a:hover{
     address {
         letter-spacing: 5px;
         transform: translate(0px,-250px);
+        padding-bottom: 0px;
     }
 
     address >a {
