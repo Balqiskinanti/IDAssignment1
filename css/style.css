@@ -45,6 +45,7 @@ header >nav.menu >a{
   flex-direction: column;
 }
 
+/* hover style */
 header >nav.menu >a:hover{
   opacity: 50%;
 }
@@ -149,6 +150,7 @@ form .contact >h3{
   /* padding differs based on screen size */
 }
 
+/* set the flexbox of input in form */
 form .contact .input{
   display: flex;
   flex-wrap: wrap;
@@ -156,10 +158,14 @@ form .contact .input{
   flex-direction: row;
   padding: 30px;
 }
+
+/* aligning the conotent inside each box to center */
 form .contact .input .input-box{
   text-align: center;
   /* padding depends on screen size */
 }
+
+/* set style for input */
 form .contact .input .input-box >label{
   font-family: "Open Sans", sans-serif;
   /* font size depends on screen size */
@@ -174,6 +180,7 @@ form .contact .input .input-box >input{
   border-bottom: 2px solid  rgb(227,163,156);
 }
 
+/* button styling */
 form .contact >button{
   background-color:  rgb(227,163,156); 
   border: rgb(227,163,156);
@@ -188,6 +195,7 @@ form .contact >button{
   cursor: pointer;
 }
 
+/* make button change color when hovered */
 form .contact >button:hover {
   background-color: #fff;
   color: rgb(227,163,156);
@@ -213,12 +221,13 @@ footer >nav >a{
   letter-spacing: 3px;
 }
 
+/* make footer chnage color when hovered */
 footer >nav >a:hover{
   color: #dd545b;
 }
 
 /* media query starts here */
-/* Extra small devices (landscape phones, 576px and up) */
+/* Extra small devices (phones, 200px and up) */
 @media screen and (min-width: 200px) {
   header .logo {
     width: 40px;
@@ -267,6 +276,7 @@ footer >nav >a:hover{
   }
 }
 
+/* Small devices (phones, 377px and up) */
 @media screen and (min-width: 377px) {
   header .logo {
       width: 40px;
@@ -302,6 +312,7 @@ footer >nav >a:hover{
   }
 }
 
+/* Small devices (phones, 458px and up) */
 @media screen and (min-width: 458px) {
   header .logo {
       width: 50px;

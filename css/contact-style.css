@@ -43,6 +43,7 @@ header >nav.menu >a{
     flex-direction: column;
 }
 
+/* decrease opacity when hovered */
 header >nav.menu >a:hover{
     opacity: 50%;
 }
@@ -61,13 +62,14 @@ h1{
     z-index: 1;
 }
 
+/* set flexbox of image  */
 .image-container{
     display: flex;
     justify-content: center;
     /* height depends on screen size  */
 }
 
-/* position depends on screen size  */
+/* position image depends on screen size  */
 
 /* give paddings and style to address */
 address{
@@ -95,14 +97,15 @@ address >a.tel{
     text-decoration: overline;
 }
 
+/* make both links smaller when hovered */
 address >a:hover{
     opacity: 50%;
 }
 
+/* make font of tel no smalled when hovered */
 address >a.tel:hover{
     font-size: smaller;
 }
-
 
 /* footer */
 footer{
@@ -123,12 +126,13 @@ footer >nav >a{
     letter-spacing: 3px;
 }
 
+/* change colour when hovered */
 footer >nav >a:hover{
     color: #dd545b;
 }
 
 /* media query starts here */
-/* Extra small devices (landscape phones, 576px and up) */
+/* Extra mall devices (phones, 200px and up) */
 @media screen and (min-width: 200px) {
     header .logo {
         width: 40px;
@@ -171,7 +175,7 @@ footer >nav >a:hover{
     }
 }
 
-/* Extra small devices (landscape phones, 576px and up) */
+/* Extra Small devices (phones, 377px and up) */
 @media screen and (min-width: 377px) {
     header .logo {
         width: 40px;
@@ -214,18 +218,18 @@ footer >nav >a:hover{
     }
 }
 
-/* Small devices (landscape phones, 458px and up) */
+/* Extra Small devices (phones, 458px and up) */
 @media screen and (min-width: 458px) {
     header .logo {
         width: 50px;
         padding: 15px;
     }
     
-      header >nav.menu{
+    header >nav.menu{
         margin:auto 15px;
     }
     
-      header >nav.menu >a {
+    header >nav.menu >a {
         font-size: 15px;
         padding-right: 10px;
     }
@@ -257,6 +261,7 @@ footer >nav >a:hover{
     }
 }
 
+/* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
     header .logo {
         width: 50px;
@@ -272,6 +277,7 @@ footer >nav >a:hover{
         padding-right: 10px;
     }
 }
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     header .logo {
@@ -312,7 +318,6 @@ footer >nav >a:hover{
     address >a.tel{
         font-size: 30px;
     }
-
 }
 
 /* Large devices (desktops, 992px and up) */

@@ -44,6 +44,7 @@ header >nav.menu >a{
     flex-direction: column;
 }
 
+/* decrease opacity when hovered */
 header >nav.menu >a:hover{
     opacity: 50%;
 }
@@ -69,7 +70,7 @@ header >nav.menu >a:hover{
     font-weight: 100;
 }
 
-/* height, position and padding depends on screen size */
+/* height, position and padding of image depends on screen size */
 
 /* style for main information  */
 main{
@@ -99,12 +100,13 @@ footer >nav >a{
     letter-spacing: 3px;
 }
 
+/* change color of footer when hovered */
 footer >nav >a:hover{
     color: #dd545b;
 }
 
 /* media query starts here */
-/* Extra small devices (landscape phones, 576px and up) */
+/* Extra small devices (phones, 200px and up) */
 @media screen and (min-width: 200px) {
     header .logo {
         width: 40px;
@@ -143,6 +145,8 @@ footer >nav >a:hover{
         line-height:1.5 ;
     }
 }
+
+/* Small devices (phones, 377px and up) */
 @media screen and (min-width: 377px) {
     header .logo {
         width: 40px;
@@ -157,22 +161,25 @@ footer >nav >a:hover{
         font-size: 10px;
         padding-right: 5px;
     }
-  }
+}
+
+/* Small devices (phones, 458px and up) */
 @media screen and (min-width: 458px) {
     header .logo {
         width: 50px;
         padding: 15px;
     }
     
-      header >nav.menu{
+    header >nav.menu{
         margin:auto 15px;
     }
     
-      header >nav.menu >a {
+    header >nav.menu >a {
         font-size: 15px;
         padding-right: 10px;
     }
-  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
     header .logo {

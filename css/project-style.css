@@ -44,6 +44,7 @@ header >nav.menu >a{
   flex-direction: column;
 }
 
+/* style when header is hovered */
 header >nav.menu >a:hover{
   opacity: 50%;
 }
@@ -82,6 +83,7 @@ h1 {
   position: inherit;
 }
 
+/* parent element for text element when picture is hovered */
 .projects .photo-container .overlay{
   position: absolute;
   top: 0;
@@ -89,31 +91,36 @@ h1 {
   left: 0;
   right: 0;
   height: auto;
-  opacity: 0;
+  opacity: 0%;
   transition: .5s ease;
 }
 
+/* make the text visible when hovered */
 .projects .photo-container:hover .overlay {
   opacity: 100%;
 }
+
+/* make the link clickable */
 .projects .photo-container >a{
   z-index: 2;
 }
+
+/* slow down transition */
 .projects .photo-container >a >img{
   transition: .5s ease;
 }
 
+/* make picture smaller and decrease opacity  */
 .projects .photo-container:hover >a >img {
   opacity: 90%;
   transform: scale(0.9);
 }
 
+/* style for the overlay text */
 .projects .photo-container .overlay .text {
   color: #dd545b;
   font-size: 18px;
   position: absolute;
-  /* top: 50%;
-  left: 50%; */
   text-align: start;
 }
 
@@ -138,12 +145,13 @@ footer >nav >a{
   letter-spacing: 3px;
 }
 
+/* change colour when footer is hovered */
 footer >nav >a:hover{
   color: #dd545b;
 }
 
 /* media query starts here */
-/* Extra small devices (landscape phones, 576px and up) */
+/* Extra small devices (phones, 200px and up) */
 @media screen and (min-width: 200px) {
   header .logo {
       width: 40px;
@@ -177,6 +185,7 @@ footer >nav >a:hover{
   }
 }
 
+/* Extra small devices (phones, 377px and up) */
 @media screen and (min-width: 377px) {
   header .logo {
       width: 40px;
@@ -210,6 +219,7 @@ footer >nav >a:hover{
   }
 }
 
+/* Extra small devices (phones, 458px and up) */
 @media screen and (min-width: 458px) {
   header .logo {
     width: 50px;
@@ -356,5 +366,4 @@ footer >nav >a:hover{
   .projects .photo-container .overlay{
     width: 800px;
   }
-
 }
