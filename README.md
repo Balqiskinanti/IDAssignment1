@@ -15,7 +15,8 @@ recruiters will be able to understand what I have to offer.
 * [Credits](#credits)
 
 ### Design Process
-*UX*  
+*UX* 
+
 As a recruiter of a front-end developer, i woud like to see the previous projects that the applicants have done. 
 Apart from that, i would prefer to have his/her **work experience** and **list of achievements and skills** to refer to so that i know
 if the applicant is suitable for the job. Another useful information include a brief description of the applicant. 
@@ -35,6 +36,7 @@ showcasing my projects is the best way to promote myself as a being a front-end 
 projects. 
 
 *UI*
+
 As a recruiter of a front-end developer, i would also judge applicant's portfolio website based on its **aesthetics** since I also
 promote myself as a graphic designer-meaning I'm expected to be able to design part/all interfaces of website. 
 
@@ -51,7 +53,7 @@ https://github.com/Balqiskinanti/ID_S10204973G_BalqisKinantiHaldiHeryputri_Assg1
 ### Features
 #### Existing Features: 
 * Main page : allows potential recruiters to see my brief introduction, skills and contact form.
-   * Contact Form: allows potential recruiters to easily mail me by filling out name, email (for furthe contact), company's name, message.
+   * Contact Form: allows potential recruiters to easily mail me by filling out name, email (for further contact), company's name, message.
 * Education : allows potential recruiters to see my education history and achievements.
 * Projects: allows potential recruiters to see the projects I have done so far with links to go to the actual website that i have built.
 * Expericence: allows potential recruiters to see my work experience in details.
@@ -73,12 +75,12 @@ https://github.com/Balqiskinanti/ID_S10204973G_BalqisKinantiHaldiHeryputri_Assg1
 ![web image desktop](https://github.com/Balqiskinanti/ID_S10204973G_BalqisKinantiHaldiHeryputri_Assg1_website/blob/main/pictures/landing-page-medium-mobile.PNG)
 
 In general my website function and looks the same throughout the different screen sizes. There's only 2 differences: 
-* 1st difference: contact form
+* 1st difference: contact form's content goes down as screen size decrease.
 ![web image desktop](https://github.com/Balqiskinanti/ID_S10204973G_BalqisKinantiHaldiHeryputri_Assg1_website/blob/main/pictures/contact-web.PNG)
 ![web image desktop](https://github.com/Balqiskinanti/ID_S10204973G_BalqisKinantiHaldiHeryputri_Assg1_website/blob/main/pictures/contact-mobile.PNG)
 ![web image desktop](https://github.com/Balqiskinanti/ID_S10204973G_BalqisKinantiHaldiHeryputri_Assg1_website/blob/main/pictures/contact-ipad.PNG)
 
-* 2nd difference: 
+* 2nd difference: email breaks after the dash when screen size is small enough - mobile view.
 ![web image desktop](https://github.com/Balqiskinanti/ID_S10204973G_BalqisKinantiHaldiHeryputri_Assg1_website/blob/main/pictures/contact-page-web.PNG)
 ![web image desktop](https://github.com/Balqiskinanti/ID_S10204973G_BalqisKinantiHaldiHeryputri_Assg1_website/blob/main/pictures/contact-page-mobile.PNG)
 ### Credits
