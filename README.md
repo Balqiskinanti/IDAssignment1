@@ -1,5 +1,6 @@
 # ID_S10204973G_BalqisKinantiHaldiHeryputri_Assg1_website
 My Github Page: https://balqiskinanti.github.io/IDAssignment1/
+
 This is my first ever website I made for my Interactive Development module. I chose to do portfolio as it's a good 
 starting point and I can put my personality to it :clinking_glasses:. This website is a showcase of my works
 and my skills with the **goal of promoting myself** as a front-end web developer. 
